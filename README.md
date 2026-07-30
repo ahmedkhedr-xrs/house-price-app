@@ -255,15 +255,4 @@ was trained with — if you retrain the notebooks with a different scikit-learn 
 
 ![Result page — appraised value](docs/screenshot-result.png)
 
-## Publishing to GitHub (manual upload)
 
-If you're uploading the repository manually (drag-and-drop / "Add file → Upload files" on
-GitHub) instead of using `git`, make sure you **do not upload**:
-
-- `backend/.venv/`, `backend/__pycache__/`, `backend/.env`
-- `frontend/node_modules/`, `frontend/dist/`, `frontend/.env`
-- `notebooks/data/house_prices.csv` (the raw dataset — link to it instead, see
-  [Dataset](#dataset))
-
-Everything else in this folder is safe to upload as-is. `models/house_price.pkl` is small
-enough (~9.8 MB) to include.
